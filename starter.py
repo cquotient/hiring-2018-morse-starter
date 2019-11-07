@@ -56,7 +56,7 @@ class morseTable:
                 if len(word) <= MAX_MORSE_WORD_LEN       
             ]                                            
 
-            self.morse_words.append(' '.join(words_to_decode))                                                      
+            self.morse_words.extend(words_to_decode)                                                      
         return                                                                                    
 
 if __name__ == "__main__":                               
