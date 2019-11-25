@@ -63,7 +63,7 @@ function parse_table_line(line) {
 
 function parse_context_line(line) {
     //one word per line, possibly preceded and followed by blanks
-    if(line.length < MAX_CONTEXT_WORD_LEN) {
+    if(line.length <= MAX_CONTEXT_WORD_LEN) {
         context_words.push(line);
     }
 }
