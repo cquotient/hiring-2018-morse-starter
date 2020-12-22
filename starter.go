@@ -40,7 +40,7 @@ func WatchErrors() {
     for {
         err := <-errs
         if err != nil {
-            log.Fatalf("Failed: %v", err)
+            fmt.Println("Failed: %v", err)
         }
     }
 }
